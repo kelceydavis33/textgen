@@ -34,33 +34,33 @@ for folder in folders:
 	os.system('clear')
 	print("Generating text file {} of {}".format(folders.index(folder), len(folders))
 	#Loop over teh data files
+	for fname in data_files:
+        #Open the file
+		f = open(data_files, 'rb')
+        #Load the pickle data
+		data = pkl.load(f)
+        #Loop over the channels 
 
-	#Open the file
-	f = open(data_files, 'rb')
-	#Load the pickle data
-	data = pkl.load(f)
-	#Loop over the channels 
-
-	for chan in range( 1, len(data['subtargets']))
-		#Grab the relavent info
-		bolometer = data['subtargets'][chan]['bolometer']
-		nom_freq = data['subtargets'][chan]['frequency']
-		resist = data['overbiased'][chan]['R']
-		act_freq = data['overbiased'][chan]['freq']
-
-
-
-		#Define the data
-		pd_data = {'Name':[bolometer], 
-                   'Nominal Frequency':[nom_freq], 
-                   'Actual Frequency': [act_freq], 
-                   'Resistance': [resist]}
-		#Create the dataframe
-		df = pd.DataFrame(data, columns = ['Name', 
-                                           'Nominal Frequency',
-                                           'Actual Frequency',
-                                           'Resistance'])
-		#Write the data out to a text file
-		np.savetext(text_file_directory + '{}.txt'.format(folder), df.values, delimiter = "\t", header = "name\tnom_freq\tctfreq\tresist")
-        #Close the file 
-		f.close()
+		for chan in range( 1, len(data['subtargets']))
+            #Grab the relavent info
+			bolometer = data['subtargets'][chan]['bolometer']
+			nom_freq = data['subtargets'][chan]['frequency']
+			resist = data['overbiased'][chan]['R']
+			act_freq = data['overbiased'][chan]['freq']
+            
+            
+            
+            #Define the data
+			pd_data = {'Name':[bolometer], 
+                       'Nominal Frequency':[nom_freq], 
+                       'Actual Frequency': [act_freq], 
+                       'Resistance': [resist]}
+            #Create the dataframe
+			df = pd.DataFrame(data, columns = ['Name', 
+                                               'Nominal Frequency',
+                                               'Actual Frequency',
+                                               'Resistance'])
+            #Write the data out to a text file
+			np.savetext(text_file_directory + '{}.txt'.format(folder), df.values, delimiter = "\t", header = "name\tnom_freq\tctfreq\tresist")
+            #Close the file 
+			f.close()
