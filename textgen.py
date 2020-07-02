@@ -31,8 +31,8 @@ for folder in folders:
     #grab each data file within the directory
 	data_files = glob.glob(folders + '/' + folder +  '/' + 'IceCrate*_OUTPUT.pkl')
     #Print the iteration in the list and clear the previous one so user can keep track
-    os.system('clear')
-    print("Generating text file {} of {}".format(folders.index(folder), len(folders))
+	os.system('clear')
+	print("Generating text file {} of {}".format(folders.index(folder), len(folders))
 	#Loop over teh data files
     for fname in data_files:
         #Open the file
@@ -51,18 +51,16 @@ for folder in folders:
             
             
             #Define the data
-            pd_data = {'Name':[bolometer], 
+			pd_data = {'Name':[bolometer], 
                        'Nominal Frequency':[nom_freq], 
                        'Actual Frequency': [act_freq], 
                        'Resistance': [resist]}
             #Create the dataframe
-            df = pd.DataFrame(data, columns = ['Name', 
+			df = pd.DataFrame(data, columns = ['Name', 
                                                'Nominal Frequency',
                                                'Actual Frequency',
                                                'Resistance'])
             #Write the data out to a text file
-            np.savetext(text_file_directory + '{}.txt'.format(folder), 
-                        df.values, delimiter = "\t", 
-                        header = "name\tnom_freq\tctfreq\tresist")
+			np.savetext(text_file_directory + '{}.txt'.format(folder), df.values, delimiter = "\t", header = "name\tnom_freq\tctfreq\tresist")
             #Close the file 
-            f.close()
+			f.close()
