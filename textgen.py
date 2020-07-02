@@ -34,7 +34,7 @@ for folder in folders:
 	os.system('clear')
 	print("Generating text file {} of {}".format(folders.index(folder), len(folders))
 	#Loop over teh data files
-    for fname in data_files:
+	for fname in data_files:
         #Open the file
 		f = open(fname, 'rb')
         #Load the pickle data
