@@ -29,7 +29,7 @@ text_file_directory = input("Where should the output text files be saved? ")#(wo
 #Look at each indiviual folder
 for folder in folders:
     #grab each data file within the directory
-	data_files = glob.glob(folders + '/' + folder +  '/' + 'IceCrate*_OUTPUT.pkl')
+	data_files = glob.glob(folders + '/' + folder +  '/data/' + 'IceCrate*_OUTPUT.pkl')
     #Print the iteration in the list and clear the previous one so user can keep track
 	os.system('clear')
 	print("Generating text file {} of {}".format(folders.index(folder), len(folders))
