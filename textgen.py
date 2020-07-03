@@ -32,7 +32,7 @@ for folder in folders:
 	data_files = glob.glob(folders + '/' + folder +  '/data/' + 'IceCrate*_OUTPUT.pkl')
     #Print the iteration in the list and clear the previous one so user can keep track
 	os.system('clear')
-	print("Generating text file {} of {}".format(folders.index(folder), len(folders))
+	print("Generating text file {} of {}".format(folders.index(folder), len(folders)))
 	#Loop over teh data files
 	for fname in data_files:
         #Open the file
