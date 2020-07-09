@@ -7,9 +7,9 @@ input_folders = input("What is the absolute path to the folder containing the da
 folders = glob.glob(input_folders)#Create a directory to store the text files
 text_file_directory = input("Where should the output text files be saved? ")#Look at each indiviual folder
 for folder in folders:#grab each data file within the directory
-	data_files = glob.glob(input_folders + '/' + folder +  '/data/' + 'IceCrate*_OUTPUT.pkl')#Print the iteration in the list and clear the previous one so user can keep track
+	data_files = glob.glob(input_folders + folder +  '/data/' + 'IceCrate*_OUTPUT.pkl')#Print the iteration in the list and clear the previous one so user can keep track
 	os.system('clear')
-	print("Generating text file {} of {}".format(folders.index(folder), len(folders)))#Loop over teh data files
+	print("Generating text file {} of {}".format(folders.index(folder)+1, len(folders)))#Loop over teh data files
 	for fname in data_files:#Open the file
 		f = open(data_files, 'rb')#Load the pickle data
 		data = pkl.load(f)#Loop over the channels 
