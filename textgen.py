@@ -29,5 +29,5 @@ for folder in folders:#grab each data file within the directory
 				act_freq = np.nan
 			pd_data = {'Name':[bolometer],'Nominal Frequency':[nom_freq],'Actual Frequency': [act_freq],'Resistance': [resist]}#Create the dataframe
 			df = pd.DataFrame(data, columns = ['Name', 'Nominal Frequency','Actual Frequency','Resistance'])#Write the data out to a text file
-			np.savetext(text_file_directory + '{}.txt'.format(folder), df.values, delimiter = "\t", header = "name\tnom_freq\tctfreq\tresist")#Close the file 
+			np.savetxt(text_file_directory + '{}.txt'.format(folder), df.values, delimiter = "\t", header = "name\tnom_freq\tctfreq\tresist")#Close the file 
 			f.close()
