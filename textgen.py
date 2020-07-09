@@ -11,7 +11,7 @@ for folder in folders:#grab each data file within the directory
 	os.system('clear')
 	print("Generating text file {} of {}".format(folders.index(folder)+1, len(folders)))#Loop over teh data files
 	for fname in data_files:#Open the file
-		f = open(str(data_files) 'rb')#Load the pickle data
+		f = open(str(data_files), 'rb')#Load the pickle data
 		data = pkl.load(f)#Loop over the channels 
 		for chan in range( 1, len(data['subtargets'])):#Grab the relavent info
 			bolometer = data['subtargets'][chan]['bolometer']
