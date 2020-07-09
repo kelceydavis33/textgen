@@ -41,7 +41,7 @@ for folder in folders:
 		data = pkl.load(f)
         #Loop over the channels 
 
-		for chan in range( 1, len(data['subtargets']))
+                for chan in range( 1, len(data['subtargets'])):
             #Grab the relavent info
 			bolometer = data['subtargets'][chan]['bolometer']
 			nom_freq = data['subtargets'][chan]['frequency']
