@@ -13,11 +13,20 @@ for folder in folders:#grab each data file within the directory
 	for fname in data_files:#Open the file
 		f = open(str(fname), 'rb')#Load the pickle data
 		data = pkl.load(f)#Loop over the channels 
-		for chan in range( 1, len(data['subtargets'])):#Grab the relavent info
-			bolometer = data['subtargets'][chan]['bolometer']
-			nom_freq = data['subtargets'][chan]['frequency']
-			resist = data['overbiased'][chan]['R']
-			act_freq = data['overbiased'][chan]['freq']#Define the data
+		for schan in range( 1, len(data['subtargets'])):#Grab the relavent info
+			try:
+				bolometer = data['subtargets'][schan]['bolometer']
+				nom_freq = data['subtargets'][schan]['frequency']
+			except:
+				bolometer = np.nan
+				nom_freq = np.nan
+		for ochan in range( 1, len(data['overbiased'])):#Grab the relavent info
+			try:
+				resist = data['overbiased'][ochan]['R']
+				act_freq = data['overbiased'][chan]['freq']#Define the data
+			except:
+				resist = np.nan
+				act_freq = np.nan
 			pd_data = {'Name':[bolometer],'Nominal Frequency':[nom_freq],'Actual Frequency': [act_freq],'Resistance': [resist]}#Create the dataframe
 			df = pd.DataFrame(data, columns = ['Name', 'Nominal Frequency','Actual Frequency','Resistance'])#Write the data out to a text file
 			np.savetext(text_file_directory + '{}.txt'.format(folder), df.values, delimiter = "\t", header = "name\tnom_freq\tctfreq\tresist")#Close the file 
