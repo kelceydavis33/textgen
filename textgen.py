@@ -5,7 +5,6 @@ import pandas as pd
 import numpy as np#Create a list of all file folders in current directory
 input_folders = input("What is the absolute path to the folder containing the data files? ")#Get the names of all the folders
 folders = glob.glob(input_folders)#Create a directory to store the text files
-os.mkdir(folders +'/text_files')#Note the name of the directory to save the files
 text_file_directory = input("Where should the output text files be saved? ")#Look at each indiviual folder
 for folder in folders:#grab each data file within the directory
 	data_files = glob.glob(folders + '/' + folder +  '/data/' + 'IceCrate*_OUTPUT.pkl')#Print the iteration in the list and clear the previous one so user can keep track
