@@ -1,1 +1,0 @@
-# name	nom_freq	ctfreq	resist
