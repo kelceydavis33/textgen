@@ -13,6 +13,10 @@ for folder in folders:#grab each data file within the directory
 	for fname in data_files:#Open the file
 		f = open(str(fname), 'rb')#Load the pickle data
 		data = pkl.load(f)#Loop over the channels 
+		bols = []
+		nfs = []
+		rests = []
+		afrs = []
 		for schan in range( 1, len(data['subtargets'])):#Grab the relavent info
 			try:
 				bolometer = data['subtargets'][schan]['bolometer']
@@ -20,6 +24,8 @@ for folder in folders:#grab each data file within the directory
 			except:
 				bolometer = np.nan
 				nom_freq = np.nan
+			bols.append(bolometer)
+			nfs.append(nom_freq)
 		for ochan in range( 1, len(data['overbiased'])):#Grab the relavent info
 			try:
 				resist = data['overbiased'][ochan]['R']
@@ -27,7 +33,9 @@ for folder in folders:#grab each data file within the directory
 			except:
 				resist = np.nan
 				act_freq = np.nan
-		pd_data = {'Name':[bolometer],'Nominal Frequency':[nom_freq],'Actual Frequency': [act_freq],'Resistance':[resist]}#Create the dataframe
+			rests.append(resist)
+			afrs.append(act_freq)
+		pd_data = {'Name':[bols],'Nominal Frequency':[nfs],'Actual Frequency': [afrs],'Resistance':[rests]}#Create the dataframe
 		df = pd.DataFrame(pd_data, columns = ['Name', 'Nominal Frequency','Actual Frequency','Resistance'])
 		df.to_csv(text_file_directory + '{}.txt'.format(folder), header = True)
 		f.close()
