@@ -23,7 +23,7 @@ for folder in folders:#grab each data file within the directory
 		for ochan in range( 1, len(data['overbiased'])):#Grab the relavent info
 			try:
 				resist = data['overbiased'][ochan]['R']
-				act_freq = data['overbiased'][chan]['freq']#Define the data
+				act_freq = data['overbiased'][ochan]['freq']#Define the data
 			except:
 				resist = np.nan
 				act_freq = np.nan
