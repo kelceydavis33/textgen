@@ -27,7 +27,7 @@ for folder in folders:#grab each data file within the directory
 			except:
 				resist = np.nan
 				act_freq = np.nan
-			pd_data = {'Name':[bolometer],'Nominal Frequency':[nom_freq],'Actual Frequency': [act_freq],'Resistance': [resist]}#Create the dataframe
+			pd_data = {'Name':[bolometer],'Nominal Frequency':[nom_freq],'Actual Frequency': [act_freq],'Resistance':[resist]}#Create the dataframe
 			df = pd.DataFrame(pd_data, columns = ['Name', 'Nominal Frequency','Actual Frequency','Resistance'])
-                        df.to_csv(text_file_directory + '{}.txt'.format(folder))
+			df.to_csv(text_file_directory + '{}.txt'.format(folder), header = True)
 			f.close()
