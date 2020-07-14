@@ -1,0 +1,2 @@
+,Name,Nominal Frequency,Actual Frequency,Resistance
+0,['PB20.13.10_Comb30Ch01'],[1624984.745868],[1624984.7412109375],[2.87869652407529]
