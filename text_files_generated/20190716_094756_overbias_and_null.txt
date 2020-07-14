@@ -1,0 +1,2 @@
+,Name,Nominal Frequency,Actual Frequency,Resistance
+0,PB20.13.12_Comb20Ch32,4356994.633563,,
