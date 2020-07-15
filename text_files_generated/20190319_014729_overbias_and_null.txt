@@ -1,2 +1,2 @@
-,Name,Nominal Frequency,Actual Frequency,Resistance
-0,[],[],[],[]
+Name,Nominal Frequency,Actual Frequency,Resistance
+[],[],[],[]

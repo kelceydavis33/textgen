@@ -1,5 +1,5 @@
-,Name,Nominal Frequency,Actual Frequency,Resistance
-0,"['PB20.13.12_Comb12Ch01' 'PB20.13.12_Comb12Ch02' 'PB20.13.12_Comb12Ch03'
+Name,Nominal Frequency,Actual Frequency,Resistance
+"['PB20.13.12_Comb12Ch01' 'PB20.13.12_Comb12Ch02' 'PB20.13.12_Comb12Ch03'
  'PB20.13.12_Comb12Ch04' 'PB20.13.12_Comb12Ch05' 'PB20.13.12_Comb12Ch06'
  'PB20.13.12_Comb12Ch07' 'PB20.13.12_Comb12Ch08' 'PB20.13.12_Comb12Ch09'
  'PB20.13.12_Comb12Ch10' 'PB20.13.12_Comb12Ch11' 'PB20.13.12_Comb12Ch12'

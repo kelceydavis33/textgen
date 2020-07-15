@@ -1,5 +1,5 @@
-,Name,Nominal Frequency,Actual Frequency,Resistance
-0,"['PB20.13.28_Comb21Ch01' 'PB20.13.28_Comb21Ch02' 'PB20.13.28_Comb21Ch03'
+Name,Nominal Frequency,Actual Frequency,Resistance
+"['PB20.13.28_Comb21Ch01' 'PB20.13.28_Comb21Ch02' 'PB20.13.28_Comb21Ch03'
  ... 'PB20.13.12_Comb20Ch30' 'PB20.13.12_Comb20Ch31'
  'PB20.13.12_Comb20Ch32']","[1633834.843524 1660385.136493 1699981.69411  ... 4187622.074969
  4274978.642352 4356994.633563]","[           nan            nan            nan ...            nan
