@@ -10,13 +10,14 @@ for folder in folders:#grab each data file within the directory
 	data_files = glob.glob(input_folders + folder +  '/data/' + 'IceCrate*_OUTPUT.pkl')#Print the iteration in the list and clear the previous one so user can keep track
 	os.system('clear')
 	print("Generating text file {} of {}".format(folders.index(folder)+1, len(folders)))#Loop over teh data files
+	bols = []
+	nfs = []
+	rests = []
+	afrs = []
 	for fname in data_files:#Open the file
 		f = open(str(fname), 'rb')#Load the pickle data
 		data = pkl.load(f)#Loop over the channels 
-		bols = []
-		nfs = []
-		rests = []
-		afrs = []
+
 		for schan in range( 1, len(data['subtargets'])):#Grab the relavent info
 			try:
 				bolometer = data['subtargets'][schan]['bolometer']
@@ -35,7 +36,7 @@ for folder in folders:#grab each data file within the directory
 				act_freq = np.nan
 			rests.append(resist)
 			afrs.append(act_freq)
-		pd_data = {'Name':[bols],'Nominal Frequency':[nfs],'Actual Frequency': [afrs],'Resistance':[rests]}#Create the dataframe
-		df = pd.DataFrame(pd_data, columns = ['Name', 'Nominal Frequency','Actual Frequency','Resistance'])
-		df.to_csv(text_file_directory + '{}.txt'.format(folder), header = True)
 		f.close()
+	pd_data = {'Name':[np.array(bols)],'Nominal Frequency':[np.array(nfs)],'Actual Frequency': [np.array(afrs)],'Resistance':[np.array(rests)]}#Create the dataframe
+	df = pd.DataFrame(pd_data, columns = ['Name', 'Nominal Frequency','Actual Frequency','Resistance'])
+	df.to_csv(text_file_directory + '{}.txt'.format(folder), header = True)
