@@ -1,2 +1,157 @@
 ,Name,Nominal Frequency,Actual Frequency,Resistance
-0,"['PB20.13.12_Comb20Ch01', 'PB20.13.12_Comb20Ch02', 'PB20.13.12_Comb20Ch03', 'PB20.13.12_Comb20Ch04', 'PB20.13.12_Comb20Ch05', 'PB20.13.12_Comb20Ch06', 'PB20.13.12_Comb20Ch07', 'PB20.13.12_Comb20Ch08', 'PB20.13.12_Comb20Ch09', 'PB20.13.12_Comb20Ch10', 'PB20.13.12_Comb20Ch11', 'PB20.13.12_Comb20Ch12', 'PB20.13.12_Comb20Ch13', 'PB20.13.12_Comb20Ch14', 'PB20.13.12_Comb20Ch15', 'PB20.13.12_Comb20Ch16', 'PB20.13.12_Comb20Ch17', 'PB20.13.12_Comb20Ch18', 'PB20.13.12_Comb20Ch19', 'PB20.13.12_Comb20Ch20', 'PB20.13.12_Comb20Ch21', 'PB20.13.12_Comb20Ch22', 'PB20.13.12_Comb20Ch23', 'PB20.13.12_Comb20Ch24', 'PB20.13.12_Comb20Ch25', 'PB20.13.12_Comb20Ch26', 'PB20.13.12_Comb20Ch27', 'PB20.13.12_Comb20Ch28', 'PB20.13.12_Comb20Ch29', 'PB20.13.12_Comb20Ch30', 'PB20.13.12_Comb20Ch31', 'PB20.13.12_Comb20Ch32']","[1726379.399188, 1780700.68825, 1836547.856219, 1879959.111102, 1937332.157977, 1993637.089618, 2053298.954852, 2104873.661883, 2167129.521258, 2228469.853289, 2356109.623797, 2415313.72536, 2488021.855243, 2548751.835711, 2620239.262469, 2705459.599383, 2844238.285907, 3043975.834735, 3215255.741961, 3304443.364032, 3361053.471453, 3458328.251727, 3538131.718524, 3624801.640399, 3705291.752703, 3793258.671649, 3890151.982196, 3991012.577899, 4075317.387469, 4187622.074969, 4274978.642352, 4356994.633563]",[nan],[nan]
+0,"['PB20.13.28_Comb21Ch01' 'PB20.13.28_Comb21Ch02' 'PB20.13.28_Comb21Ch03'
+ ... 'PB20.13.12_Comb20Ch30' 'PB20.13.12_Comb20Ch31'
+ 'PB20.13.12_Comb20Ch32']","[1633834.843524 1660385.136493 1699981.69411  ... 4187622.074969
+ 4274978.642352 4356994.633563]","[             nan              nan              nan              nan
+              nan              nan              nan              nan
+              nan              nan              nan              nan
+ 1887817.3828125               nan              nan              nan
+              nan              nan              nan              nan
+              nan              nan              nan              nan
+              nan              nan              nan              nan
+              nan              nan              nan              nan
+              nan              nan              nan              nan
+              nan              nan              nan              nan
+              nan              nan              nan              nan
+              nan              nan              nan              nan
+              nan              nan              nan              nan
+              nan              nan              nan              nan
+              nan              nan              nan              nan
+              nan              nan              nan              nan
+              nan              nan              nan              nan
+              nan              nan              nan              nan
+              nan              nan              nan              nan
+              nan              nan              nan              nan
+              nan              nan 1688613.89160156 1728973.38867188
+              nan              nan 1888885.49804688 1937866.2109375
+ 2001419.06738281 2063674.92675781 2106933.59375    2187194.82421875
+ 2234268.18847656 2295150.75683594 2363510.13183594 2430191.04003906
+ 2498168.9453125               nan 2624511.71875                 nan
+ 2771301.26953125 2856063.84277344 2902526.85546875              nan
+ 3052215.57617188 3131256.10351562 3229370.1171875               nan
+ 3366775.51269531 3475189.20898438 3546218.87207031 3644256.59179688
+              nan              nan              nan              nan
+              nan              nan              nan              nan
+              nan              nan              nan              nan
+              nan              nan              nan              nan
+              nan              nan              nan              nan
+              nan              nan              nan              nan
+              nan              nan              nan              nan
+              nan              nan              nan              nan
+              nan              nan              nan              nan
+              nan              nan              nan              nan
+              nan              nan              nan              nan
+              nan              nan              nan              nan
+              nan              nan              nan              nan
+              nan              nan              nan              nan
+              nan              nan              nan              nan
+              nan              nan              nan              nan
+              nan              nan              nan              nan
+              nan              nan              nan              nan
+              nan              nan              nan              nan
+              nan              nan              nan              nan
+              nan              nan              nan              nan
+              nan              nan              nan              nan
+              nan              nan              nan              nan
+              nan              nan              nan              nan
+              nan              nan              nan              nan
+              nan              nan              nan              nan
+              nan              nan              nan              nan
+              nan              nan              nan              nan
+              nan              nan              nan              nan
+              nan              nan              nan              nan
+ 1709823.60839844 1755752.56347656 1793518.06640625 1856231.68945312
+ 1909866.33300781 1976776.12304688              nan 2087402.34375
+ 2185058.59375                 nan 2399368.28613281              nan
+ 2515640.25878906 2569808.95996094 2672271.72851562 2708587.64648438
+ 2869720.45898438 2947387.6953125  3092803.95507812 3173065.18554688
+ 3269271.85058594              nan 3405761.71875    3487091.06445312
+ 3607330.32226562 3672332.76367188 3735961.9140625  3953475.95214844
+              nan              nan              nan              nan
+              nan              nan              nan              nan
+              nan              nan              nan              nan
+              nan              nan              nan              nan
+              nan              nan              nan              nan
+ 1757812.5                     nan              nan              nan
+              nan              nan              nan              nan
+              nan              nan              nan              nan
+              nan              nan              nan              nan
+              nan              nan              nan              nan
+              nan              nan              nan              nan
+              nan              nan              nan              nan
+              nan              nan              nan              nan
+              nan              nan              nan              nan
+              nan              nan              nan              nan
+              nan              nan              nan              nan
+              nan              nan              nan 2090225.21972656
+ 2152023.31542969 2206649.78027344              nan 2369918.82324219
+              nan              nan              nan              nan
+              nan 1777877.80761719              nan              nan
+              nan              nan              nan              nan
+              nan              nan              nan              nan
+ 1760787.96386719              nan              nan 1969451.90429688
+ 2032318.11523438              nan 2170562.74414062              nan
+              nan 2414703.36914062              nan 2514343.26171875
+ 2544937.13378906 2680892.94433594              nan              nan
+ 2861175.53710938 2924499.51171875              nan              nan]","[       nan        nan        nan        nan        nan        nan
+        nan        nan        nan        nan        nan        nan
+ 0.23270595        nan        nan        nan        nan        nan
+        nan        nan        nan        nan        nan        nan
+        nan        nan        nan        nan        nan        nan
+        nan        nan        nan        nan        nan        nan
+        nan        nan        nan        nan        nan        nan
+        nan        nan        nan        nan        nan        nan
+        nan        nan        nan        nan        nan        nan
+        nan        nan        nan        nan        nan        nan
+        nan        nan        nan        nan        nan        nan
+        nan        nan        nan        nan        nan        nan
+        nan        nan        nan        nan        nan        nan
+        nan        nan        nan        nan 1.6410486  2.31238941
+        nan        nan 2.54288943 3.14019445 2.1984663  1.95305789
+ 2.31238678 1.11886276 1.08192901 2.76591409 3.56575129 2.12668422
+ 1.13661787        nan 3.94094684        nan 1.09047978 1.24947135
+ 4.00901189        nan 3.61015597 4.48665474 2.81452754        nan
+ 3.51302359 1.48462676 4.7284035  0.80812153        nan        nan
+        nan        nan        nan        nan        nan        nan
+        nan        nan        nan        nan        nan        nan
+        nan        nan        nan        nan        nan        nan
+        nan        nan        nan        nan        nan        nan
+        nan        nan        nan        nan        nan        nan
+        nan        nan        nan        nan        nan        nan
+        nan        nan        nan        nan        nan        nan
+        nan        nan        nan        nan        nan        nan
+        nan        nan        nan        nan        nan        nan
+        nan        nan        nan        nan        nan        nan
+        nan        nan        nan        nan        nan        nan
+        nan        nan        nan        nan        nan        nan
+        nan        nan        nan        nan        nan        nan
+        nan        nan        nan        nan        nan        nan
+        nan        nan        nan        nan        nan        nan
+        nan        nan        nan        nan        nan        nan
+        nan        nan        nan        nan        nan        nan
+        nan        nan        nan        nan        nan        nan
+        nan        nan        nan        nan        nan        nan
+        nan        nan        nan        nan 0.9392368  4.73432933
+ 1.11085599 1.28542678 1.65101594 3.13569729        nan 1.95282655
+ 1.03661213        nan 5.36878646        nan 4.2016607  3.97524175
+ 5.9681457  2.17372983 1.72145519 3.87189556 6.53383804 3.41520899
+ 5.75374821        nan 4.40651377 2.79662755 5.84270218 4.51196154
+ 1.06483344 7.67794827        nan        nan        nan        nan
+        nan        nan        nan        nan        nan        nan
+        nan        nan        nan        nan        nan        nan
+        nan        nan        nan        nan 7.10733969        nan
+        nan        nan        nan        nan        nan        nan
+        nan        nan        nan        nan        nan        nan
+        nan        nan        nan        nan        nan        nan
+        nan        nan        nan        nan        nan        nan
+        nan        nan        nan        nan        nan        nan
+        nan        nan        nan        nan        nan        nan
+        nan        nan        nan        nan        nan        nan
+        nan        nan        nan 0.99420501 1.08730387 0.89147897
+        nan 0.696703          nan        nan        nan        nan
+        nan 0.10467783        nan        nan        nan        nan
+        nan        nan        nan        nan        nan        nan
+ 2.17392898        nan        nan 1.00418225 1.75738145        nan
+ 1.1938351         nan        nan 2.08592002        nan 0.91502358
+ 1.60946048 1.87818008        nan        nan 1.45135622 1.42160953
+        nan        nan]"
