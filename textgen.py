@@ -39,4 +39,4 @@ for folder in folders:#grab each data file within the directory
 		f.close()
 	pd_data = {'Name':[np.array(bols)],'Nominal Frequency':[np.array(nfs)],'Actual Frequency': [np.array(afrs)],'Resistance':[np.array(rests)]}#Create the dataframe
 	df = pd.DataFrame(pd_data, columns = ['Name', 'Nominal Frequency','Actual Frequency','Resistance'])
-	df.to_csv(text_file_directory + '{}.txt'.format(folder), header = True)
+	df.to_csv(text_file_directory + '{}.txt'.format(folder), header = True, index = False)
