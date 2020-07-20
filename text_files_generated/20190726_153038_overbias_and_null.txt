@@ -1,2 +1,1 @@
 Name,Nominal Frequency,Actual Frequency,Resistance
-[],[],[],[]

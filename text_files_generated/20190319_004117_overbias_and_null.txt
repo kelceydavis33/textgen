@@ -1,2 +1,2 @@
 Name,Nominal Frequency,Actual Frequency,Resistance
-[],[],[],[]
+PB20.13.10_Comb05Ch02,1657028.202899,1657028.1982421875,0.22271375345377617
